@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Focus Mode",
+  "version": "1.0",
+  "description": "Hides distractions on YouTube like comments, recommendations, and Shorts.",
+  "permissions": ["storage"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["focus.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

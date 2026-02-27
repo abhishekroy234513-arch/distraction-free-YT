@@ -1,0 +1,22 @@
+/* Hides elements when the 'yt-focus-mode-active' class is applied */
+
+/* Sidebar Recommendations */
+html.yt-focus-mode-active #secondary,
+html.yt-focus-mode-active #secondary-inner { 
+    display: none !important; 
+} 
+
+/* Comments Section */
+html.yt-focus-mode-active #comments { 
+    display: none !important; 
+} 
+
+/* Shorts Shelves on Home/Search */
+html.yt-focus-mode-active ytd-reel-shelf-renderer { 
+    display: none !important; 
+} 
+
+/* Shorts Icon in the side navigation */
+html.yt-focus-mode-active a[title="Shorts"] { 
+    display: none !important; 
+}
